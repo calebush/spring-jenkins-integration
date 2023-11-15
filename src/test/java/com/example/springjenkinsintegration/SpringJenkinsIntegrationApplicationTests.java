@@ -1,21 +1,21 @@
 package com.example.springjenkinsintegration;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@Slf4j
 class SpringJenkinsIntegrationApplicationTests {
-	public static Logger logger = (Logger) LoggerFactory.getLogger(SpringJenkinsIntegrationApplicationTests.class);
 
 
 	@Test
 	void contextLoads() {
-		logger.info("Test case executing...");
+		log.info("Inside Test....");
 		assertEquals(true, true);
 	}
 
